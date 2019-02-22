@@ -47,12 +47,5 @@ var contact = document.getElementById('tab-contact-information');
 
 JSON.parse(JSON.stringify(output));
 
-// OTHER     pertinent info:
+// OTHER pertinent info:
 // .tab-product-and-services <ul>goods and services
-
-// Thanks D Crockford for this
-function searchTree(term, node) {
-    if (node.innerText.toLowerCase().include(term.toLowerCase())) return node;
-    node.removeChild(node.firstElementChild)
-    return searchTree(node.firstElementChild)
-}
